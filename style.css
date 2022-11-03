@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto',Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.header {
+    background-color: #1F2937;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+    .header .top-band {
+        display: flex;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+        .header .top-band h2 {
+            flex: 1;
+            display: flex;
+            margin-top: 30px;
+            margin-bottom: 0px;
+            font-size: 24px;
+            color: #F9FAF8;
+        }
+
+        .header .top-band .links {
+            flex: 2;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            gap: 32px;
+            font-size: 18px;
+        }
+
+        .header .top-band a {
+            text-decoration: none;
+            color: #E5E7EB;
+        }
+
+    .header .content {
+        display: flex;
+        margin-top: 120px;
+        margin-bottom: 120px;
+        margin-left: 15%;
+        margin-right: 15%;
+        height: 360px;
+    }
+
+        .header .content .right {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+            .header .content .right img {
+                height: 100%;
+                width: auto;
+            }
+
+        .header .content .left {
+            flex: 1;
+        }
+
+            .header .content .left h1 {
+                font-size: 48px;
+                color: #F9FAF8;
+                font-weight: bolder;
+                margin-bottom: 0;
+                line-height: 1.5;
+            }
+
+            .header .content .left p {
+                font-size: 18px;
+                color: #E5E7EB;
+                margin-top: 0;
+            }
+
+            .header .content .left button {
+                background-color: #3882F6;
+                color: #F9FAF8;
+                border-color:transparent;
+                font-weight: bold;
+                padding: 0.4rem 0 0.4rem 0;
+                width: 7rem;
+                height: auto;
+                border-radius: .5rem;
+            }
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5em;
+}
+
+    .info .title {
+        font-size: 36px;
+        font-weight: bolder;
+        color: #1F2937;
+        margin: 3%
+    }
+
+    .info .content {
+        display: flex;
+        gap: 7%;
+    }
+
+        .info .content .recipe {
+            padding: 0;
+            margin:0;
+            width: 15em;
+        }
+
+            .info .content .recipe .image {
+                aspect-ratio: 1/1;
+                width:100%;
+                border: .3em solid #3882F6;
+                border-radius: 1em;
+                overflow: hidden;
+            }
+
+                .info .content .recipe .image img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+
+            .info .content .recipe .caption {
+                text-align: center;
+                padding: .5em 0em 0em 0em;
+                width: 100%;
+                font-size: 1em;
+                color: grey;
+
+            }
+
+.quote {
+    background-color: #E5E7EB;
+    padding: 10em 35% 10em 35%;
+}
+
+    .quote .main-text {
+        font-size: 36px;
+        font-style: italic;
+        font-weight:lighter;
+        color: #1F2937;
+        text-align: left;
+    }
+
+    .quote .author {
+        font-size: 24px;
+        font-weight: bold;
+        text-align: right;
+        padding-right: 5%;
+    }
+
+.sign-up {
+    display: flex;
+    justify-content: center;
+    padding: 5em 0 5em 0;
+}
+
+    .sign-up .blue-box {
+        background-color: #3882F6;
+        color: #E5E7EB;
+        width: 50%;
+        font-size: 24px;
+        border-radius: .5em;
+        padding: 2em 7em 2em 7em
+    }
+
+        .sign-up .blue-box h2 {
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+
+        .sign-up .blue-box p {
+            display: inline;
+            margin-top: .25em;
+        }
+
+        .sign-up .blue-box button {
+            background-color: #3882F6;
+            border: .1em solid #E5E7EB;
+            color: #E5E7EB;
+            font-size: 28px;
+            padding: .4em 1.4em .4em 1.4em;
+            border-radius: .3em;
+            float: right;
+            /* note: I decided to challenge myself by working with this button
+            as an inline item. I was able to make it work with negative margin below.
+            Normally, I would not do this. */
+            margin-top: -1em;
+        }
+
+.footer {
+    background-color: #1F2937;
+    padding: 5em 20% 5em 20%;
+}
+
+    .footer p {
+        font-size: 24px;
+        color: #E5E7EB;
+        text-align: center;
+    }
